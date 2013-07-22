@@ -1,102 +1,256 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My First Bitstarter</title>
-    <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" 
-          href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-      .container {
-        width: 960px;
-      }
-      p.lead {
-        padding-top: 15px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
-        text-align: center;
-      }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
-      }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
-        </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
-        </div>
-      </div>
-      <div class="row heading">
-        <div class="span12">
-          <h1>Bitstarter Title</h1>
-        </div>
-      </div>
-      <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
-        </div>
-      </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
-        </div>
-        <div class="span6">
-          <div class="thermometer">
-            Thermometer
-          </div>
-          <div class="order">
-            Order
-          </div>
-          <div class="social">
-            Social
-          </div>
-        </div>
-      </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1
-        </div>
-      </div>
-      <div class="row section2">
-        <div class="span12">
-          Marketing Section 2
-        </div>
-      </div>
-      <div class="row faq">
-        <div class="span12">
-          FAQ
-        </div>
-      </div>
-      <div class="row footer">
-        <div class="span12">
-          Footer
-        </div>
-      </div>
-    </div>
-  </body>
+ <head>
+  <meta charset="utf-8">
+  <title>Bitstarter</title>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet"  href="css/bootstrap.min.css">
+  <link rel="stylesheet"  href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet"  href="css/bootstrap-social.css">
+ 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style type="text/css">
+
+
+/* 980 and up*/
+
+ @media(min-width:980px){
+   .statistics{
+	height:310px;
+  }
+
+  .heading
+  {padding-top:60px;}
+
+  .subheading
+  {padding-bottom:30px;}
+  
+  .linediv-l{
+	border-right:1px solid #fff;
+  }
+
+  .linediv-c{
+	border-right:1px solid #fff;
+  }
+ }
+
+
+/* 480 and less*/
+
+  @media(max-width:480px){
+
+  .statistics{
+  margin-bottom:40px;
+  
+  width:103% !important;
+   
+  }
+  
+  
+  .linediv-l{
+	border-bottom:1px solid #fff;
+  }
+
+  .linediv-c{
+	border-bottom:1px solid #fff;
+  }
+
+ .linediv-r{
+	 border-bottom:0px solid #fff;
+  }
+
+  
+
+  }
+
+
+
+  .span6 img{
+	margin:0px 0px 40px 0px;}
+
+  .span6 p{
+	max-width:490px;
+	text-align:justify;}
+
+  .progress{
+    max-width:450px;
+	margin:auto;}
+
+  .statistics{
+    padding-top:30px;
+    background-color:#000;
+	color:#fff;
+	text-align:center;
+	max-width:490px;
+	}
+
+  .statistics p, .heading, .subheading, .footer{
+    text-align:center;}
+   
+   .footer{
+	font-size:10px;
+	color:#ccc;
+	}
+
+
+  .btn{
+	margin:10px;}
+
+
+  </style>
+
+
+
+ </head>
+
+ <body>
+
+ 	<div class="navbar navbar-fixed-top">
+ 			<div class="navbar-inner">
+ 				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+ 						<span class="icon-th-list"></span>
+ 					</a>
+					
+ 					<a href="#" class="brand">Bitstarter</a>
+
+ 					<div class="nav-collapse collapse">
+
+ 						<ul class="nav pull-left">
+ 							<li class="active"><a href="#" >Home</a></li>
+ 							<li><a href="#">About</a></li>
+ 							<li><a href="#">Contact</a></li>
+ 						</ul>
+ 					</div>
+ 				</div>
+
+ 			</div>
+ 	</div>
+
+	<div class="container">
+
+		<div class="row-fluid heading">
+		<div class="span12"><h1>Product</h1>
+		</div>
+		</div>
+
+		<div class="row-fluid subheading">
+		<div class="span12"><p class="lead">Once Sentence Description</p>
+		</div>
+		</div>
+
+		<div class="row-fluid">
+
+				<div class="span6">
+						<img class="img-polaroid" src="images/480X300.jpg" />
+				</div>
+
+				<div class="span6 statistics">
+						
+					 <div class="row-fluid">
+					  <div class="span4">
+					  <div class='linediv-l'>
+					  <h3>1000 </h3>
+					  <p>backers</p>
+					  </div>
+					  </div>
+					  <div class="span4">
+					  <div class='linediv-c'>
+					  <h3>$6000</h3> 
+					  <p>of $10000</p>
+					  </div>
+					  </div>
+					  <div class="span4">
+					  <div class='linediv-r'>
+					  <h3>10</h3>
+					  <p>days left</p>
+					   </div>
+					  </div>
+					</div>
+					<div class="row-fluid">
+					  <div class="span12">					  
+						<div class="progress">
+						  <div class="bar bar-success" style="width:60%;"></div>
+						  <div class="bar bar-warning" style="width:40%;"></div>
+						</div>
+					  				  
+					  </div>
+					</div>
+
+					<div class="row-fluid">
+					  <div class="span12">
+					  <button class="btn btn-success btn-large" type="button">Preorder</button>
+					  </div>
+					</div>
+
+					<div class="row-fluid">
+					    <div class="span12">
+						<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
+ 						<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
+						</div>
+					</div>
+
+				</div>
+		
+		</div>
+
+		<div class="row-fluid" >
+
+				<div class="span6">
+						<img class="img-polaroid" src="images/480X300.jpg" />
+				</div>
+
+				<div class="span6"><p>DDD Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsu</p>
+				</div>
+		
+		</div>
+
+		<div class="row-fluid">
+
+				<div class="span6"><p>EEE Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsu</p>
+				</div>
+
+				<div class="span6">
+						<img class="img-polaroid" src="images/480X300.jpg" />
+				</div>
+		
+		</div>
+
+		<div class="row-fluid">
+
+				<div class="span12">
+
+						<h3>FAQs</h3>
+
+						<ul class="nav nav-list">
+						<!-- <li class="nav-header">FAQs </li> -->
+						<li class="active"><a href="#" >Question 1</a></li>
+						<li><a href="#">Question 2</a></li>
+						<li><a href="#">Question 3</a></li>
+						<li><a href="#">Question 4</a></li>
+						</ul>
+
+				</div>
+		
+		</div>
+
+			<div class="row-fluid">
+
+				<div class="span12 footer" >
+
+					<p>This work is licensed under <a href="http://creativecommons.org">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page</p>
+
+				</div>
+		
+		</div>
+
+	</div>
+  
+	<script  src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script  src='js/bootstrap.js'></script>
+ </body>
 </html>
